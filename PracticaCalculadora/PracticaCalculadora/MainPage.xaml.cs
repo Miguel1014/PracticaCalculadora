@@ -22,7 +22,7 @@ namespace PracticaCalculadora
         {
             char primero = LPrin.Text[0];
 
-            DisplayAlert("",""+primero,"Ok");
+            
 
             if (primero.Equals("-"))
             {
