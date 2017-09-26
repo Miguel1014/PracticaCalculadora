@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PracticaCalculadora"
+             x:Class="PracticaCalculadora.MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Label  FontSize="80" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" VerticalTextAlignment="Center"
+                TextColor="Black" BackgroundColor="Cornsilk" HorizontalTextAlignment="End" x:Name="LPrin"></Label>
+
+        <Label  FontSize="40" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" VerticalTextAlignment="Center"
+                TextColor="Black" BackgroundColor="LightSteelBlue" Text="Elaborado por: Luis Miguel Salvador Dominguez"></Label>
+
+        <Button Grid.Column="3" Grid.Row="1" Text="←" BackgroundColor="Red" FontSize="40" Clicked="EvtBorrar"></Button>
+        
+        
+        <Button Grid.Column="0" Grid.Row="2" Text="7" BackgroundColor="Coral" FontSize="40" Clicked="Evt7"></Button>
+        <Button Grid.Column="0" Grid.Row="3" Text="4" BackgroundColor="Coral" FontSize="40" Clicked="Evt4"></Button>
+        <Button Grid.Column="0" Grid.Row="4" Text="1" BackgroundColor="Coral" FontSize="40" Clicked="Evt1"></Button>
+        <Button Grid.Column="0" Grid.Row="5" Text="0" BackgroundColor="Coral" FontSize="40" Clicked="Evt0"></Button>
+
+        <Button Grid.Column="1" Grid.Row="2" Text="8" BackgroundColor="Coral" FontSize="40" Clicked="Evt8"></Button>
+        <Button Grid.Column="1" Grid.Row="3" Text="5" BackgroundColor="Coral" FontSize="40" Clicked="Evt5"></Button>
+        <Button Grid.Column="1" Grid.Row="4" Text="2" BackgroundColor="Coral" FontSize="40" Clicked="Evt2"></Button>
+        <Button Grid.Column="1" Grid.Row="5" Text="." BackgroundColor="Coral" FontSize="40" Clicked="EvtPunto"></Button>
+
+        <Button Grid.Column="2" Grid.Row="2" Text="9" BackgroundColor="Coral" FontSize="40" Clicked="Evt9"></Button>
+        <Button Grid.Column="2" Grid.Row="3" Text="6" BackgroundColor="Coral" FontSize="40" Clicked="Evt6"></Button>
+        <Button Grid.Column="2" Grid.Row="4" Text="3" BackgroundColor="Coral" FontSize="40" Clicked="Evt3"></Button>
+        <Button Grid.Column="2" Grid.Row="5" Text="=" BackgroundColor="Blue" FontSize="40" Clicked="EvtIgual"></Button>
+
+        <Button Grid.Column="3" Grid.Row="2" Text="÷" BackgroundColor="Gold" FontSize="40" Clicked="EvtDiv"></Button>
+        <Button Grid.Column="3" Grid.Row="3" Text="x" BackgroundColor="Gold" FontSize="40" Clicked="EvtMul"></Button>
+        <Button Grid.Column="3" Grid.Row="4" Text="+" BackgroundColor="Gold" FontSize="40" Clicked="EvtMas"></Button>
+        <Button Grid.Column="3" Grid.Row="5" Text="-" BackgroundColor="Gold" FontSize="40" Clicked="EvtRes"></Button>
+
+    </Grid>
+</ContentPage>
